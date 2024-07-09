@@ -23,8 +23,9 @@ body{
 	margin: 2vh;
 	text-align: center;
 	font-size: 2rem;
-	border: 4px dashed blue;
+	border: 4px groove #12b0e8;
 	border-radius: 10px;
+	background-color: #47c2ef;
 }
 
 .cards{
@@ -40,7 +41,6 @@ body{
 .card{
 	width: 400px;
 	height: max-content;
-	
 	margin: 1rem auto;
 	padding: 10px;
 	display: flex;
@@ -48,21 +48,25 @@ body{
 	/* align-items: center; */
 	justify-content: center;
 	border-radius: 10px;
-	box-shadow: rgba(0, 0, 0, 0.24) 1px 3px 8px;
+	box-shadow: rgba(0, 0, 0, 0.5) 1px 3px 8px;
 }
 
 .image{
+	margin: auto;
 	width: 360px;
 	aspect-ratio: 1/1;
 	object-fit: cover;
 	transition-duration: 0.3s;
-	opacity: 0.8;
+	opacity: 0.9;
+	border-radius: 10px;
+	
 
 }
 
 .image:hover{
 	opacity: 1;
 	scale: 1.05;
+	box-shadow: rgba(18, 18, 18, 0.6) 0px 3px 8px;
 
 
 }
@@ -159,3 +163,35 @@ body{
 	color: azure;
 	background-color: #12b0e8;
 }
+
+@media only screen and (max-width: 450px) {
+		.container{
+			flex-direction: column;
+			/* justify-content: center; */
+			align-items: center;
+			width: 450px;
+			margin: auto;
+		}
+		.cards{
+			flex-direction: column;
+			/* justify-content: center; */
+			/* align-items: center; */
+			width: 100%;
+			margin: auto;
+		}
+		.image{
+			/* border: 5px solid #637074; */
+			padding: 4px;
+			margin: auto;
+			border-radius: 10px;		
+		}
+		.title{
+			border:2px groove #12b0e8;
+			background-color: aquamarine;
+			text-align: center;
+			width: 70%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	
+  }
