@@ -9,7 +9,7 @@ const App = () => {
   const [tours, setTours]= useState(data);
 
   function removeTour(id){
-      const newTours =tours.filter(tour=> tour.id !==id);
+      const newTours =tours.filter((tour)=> tour.id !==id);
 
       setTours(newTours);
   }   
